@@ -1,10 +1,12 @@
-import type { NextConfig } from "next";
+import type {NextConfig} from 'next'
+
+const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: "export",
+  output: 'export',
   trailingSlash: true,
-  assetPrefix: ".",
-};
+  assetPrefix: isProd ? '.' : '', // 반드시 끝에 슬래시
+}
 
-export default nextConfig;
+export default nextConfig
