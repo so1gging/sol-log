@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-bee",
+  "name": "kimsolzy",
   "private": true,
-  "description": "Gatsby blog starter template",
-  "version": "0.1.0",
-  "author": "Jbee[JaeYeopHan]<ljyhanll@gmail.com>",
+  "description": "Gatsby made by kimsolzy",
+  "version": "0.0.1",
+  "author": "kimsolzy<so1gging@gmail.com>",
   "bugs": {
     "url": "https://github.com/JaeYeopHan/gatsby-starter-bee/issues"
   },
