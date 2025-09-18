@@ -133,13 +133,16 @@ export default function Home() {
       </section>
 
       <section id="projects">
-        <h2>프로젝트</h2>
+        <h2>
+          Ability
+          <span className="primary-dash">_</span>
+        </h2>
         <div className="job-item">
-          <h3>포트폴리오 웹사이트 제작</h3>
-          <p className="info">Next.js · Tailwind CSS · Vercel</p>
+          <h3>Frontend Tech Leader</h3>
           <p>
-            개인 작업물, 블로그, 기술 스택을 정리한 포트폴리오 사이트. 반응형
-            디자인 및 SEO, 퍼포먼스 최적화 중심으로 구성하였습니다.
+            1년간 사내 내부 툴을 개발하는 RTB팀에서 Tech Leader 역할을
+            맡았습니다. 팀의 기술적 방향성을 제시하고, 효율적인 협업 환경과
+            일정관리를 통해 프로젝트 운영을 이끌었습니다.
           </p>
         </div>
         <div className="job-item">
