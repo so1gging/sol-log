@@ -48,6 +48,12 @@ export default function Home() {
               <li>자체 BI 툴 필터 기능 설계·구현</li>
             </ul>
           </div>
+          <div className="skills">
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>x-styled</span>
+          </div>
         </div>
         <div className="job-item">
           <h4>
@@ -66,6 +72,11 @@ export default function Home() {
                 Cypress ➝ Playwright E2E 테스트 Mirgration 및 테스트 시간 단축
               </li>
             </ul>
+          </div>
+          <div className="skills">
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>emotion</span>
           </div>
         </div>
         <div className="job-item">
@@ -90,6 +101,12 @@ export default function Home() {
               </li>
             </ul>
           </div>
+          <div className="skills">
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>x-styled</span>
+          </div>
         </div>
         <div className="job-item">
           <h4>
@@ -104,6 +121,13 @@ export default function Home() {
               <li>사내 업무용 android 앱 유지보수</li>
               <li>swiftUI로 사내 업무용 IOS 어플 프로토타입 개발</li>
             </ul>
+          </div>
+          <div className="skills">
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>spring boot</span>
+            <span>kotlin</span>
           </div>
         </div>
       </section>

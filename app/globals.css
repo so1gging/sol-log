@@ -121,12 +121,16 @@ section h2 {
 #experience .job-item .history {
   margin-top: 8px;
   margin-left: 30px;
+  margin-bottom: 8px;
+}
+
+#experience .job-item .skills {
+  margin-left: 20px;
 }
 
 .job-item .info {
   font-size: 0.9rem;
   color: #666;
-  /* margin-bottom: 8px; */
 }
 
 .job-item p {
@@ -144,9 +148,9 @@ section h2 {
 .skills span {
   background-color: #f5f5f5;
   color: #555;
-  padding: 4px 10px;
+  padding: 3px 8px;
   font-size: 0.9rem;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .education-item {
