@@ -46,6 +46,7 @@ export default function Home() {
               <li>기존 CI/CD 최적화</li>
               <li>서비스 안정성 및 레거시 시스템 개선</li>
               <li>자체 BI 툴 필터 기능 설계·구현</li>
+              <li>기존 화면 개편 및 라이브러리 최신화</li>
             </ul>
           </div>
           <div className="skills">
