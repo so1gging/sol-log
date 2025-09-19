@@ -155,18 +155,30 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="skills">
-        <h2>기술 스택</h2>
-        <div className="skills">
-          <span>JavaScript</span>
-          <span>TypeScript</span>
-          <span>React</span>
-          <span>Next.js</span>
-          <span>Node.js</span>
-          <span>CSS / HTML</span>
-          <span>Git</span>
-          <span>AWS</span>
-        </div>
+      <section id="introduction">
+        <h2>
+          Introduction
+          <span className="primary-dash">_</span>
+        </h2>
+        <p>
+          저는 React와 Next.js를 중심으로 TypeScript를 사용하는 6년차 프론트엔드
+          개발자입니다. <br /> 저는 프론트엔드 개발을 단순히 화면을 구성하는
+          작업으로 보지 않습니다. <br /> 프론트엔드 개발자는 사용자와 가장
+          밀접하게 닿아있기에 요구사항을 빠르게 반영하고 사용자 경험을 개선해
+          나가는 역할이라고 생각합니다.
+          <br /> 그렇기에 항상 사용자의 입장에서 고민하고, 요구사항을 적극적으로
+          듣고 이해한 뒤, 더 나은 방향을 제안하려 노력합니다. <br /> 제품 개발
+          과정에서 제가 가장 중요하게 여기는 가치는 ‘협업’입니다. 개인의
+          완벽함보다, 팀원들과 함께 문제를 해결하고 제품을 완성해 나가는 과정을
+          더 중요하게 생각합니다. 이를 위해 다양한 이해관계자들과 원활하게
+          소통하는 환경을 지향하고 있습니다.
+          <br /> 이러한 신념을 바탕으로, 지난 1년간은 Tech Leader로서 여러
+          소규모 프로젝트를 리딩하며 팀과 함께 성장하는 경험을 쌓았습니다.
+          <br />
+          최근에는 신설 팀에 제안을 받아 시니어 프론트엔드 엔지니어로 합류하여
+          활동하고 있습니다. <br /> 앞으로도 이 경험들이 동료들과 제품에
+          긍정적인 가치를 더할 것이라 확신합니다.
+        </p>
       </section>
 
       <section id="education">
