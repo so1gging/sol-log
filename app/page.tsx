@@ -66,12 +66,11 @@ export default function Home() {
           </h4>
           <div className="history">
             <ul>
-              <li>팀 내 프론트엔드 기술 리딩하고 팀원 관리</li>
-              <li>API 캐시 및 상태 관리 최적화하여 성능 개선</li>
+              <li>팀 내 프론트엔드 기술 리딩 및 팀원 관리</li>
+              <li>API 캐시 및 상태 관리 최적화 및 성능 개선</li>
               <li>프로토타입 기술 환경 및 아키텍처 설계</li>
-              <li>
-                Cypress ➝ Playwright E2E 테스트 Mirgration 및 테스트 시간 단축
-              </li>
+              <li>Cypress ➝ Playwright E2E 테스트 Mirgration</li>
+              <li>UI 파운데이션 설계</li>
             </ul>
           </div>
           <div className="skills">
