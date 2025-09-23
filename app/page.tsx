@@ -180,15 +180,6 @@ export default function Home() {
           긍정적인 가치를 더할 것이라 확신합니다.
         </p>
       </section>
-
-      <section id="education">
-        <h2>학력</h2>
-        <div className="education-item">
-          <h3>서울대학교 컴퓨터공학과</h3>
-          <p className="info">2018.03 ~ 2022.02 · 학사 졸업</p>
-        </div>
-      </section>
-
       <footer>마지막 업데이트: 2025년 9월 · Designed & Built by 홍길동</footer>
     </body>
   );
