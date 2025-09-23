@@ -1,12 +1,21 @@
-import type {NextConfig} from 'next'
+import type { NextConfig } from "next";
+import nextMDX from "@next/mdx";
 
-const isProd = process.env.NODE_ENV === 'production'
+const isProd = process.env.NODE_ENV === "production";
+
+const withMDX = nextMDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+});
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: 'export',
+  output: "export",
   trailingSlash: true,
-  assetPrefix: isProd ? '.' : '', // 반드시 끝에 슬래시
-}
+  assetPrefix: isProd ? "." : "", // 반드시 끝에 슬래시
+};
 
-export default nextConfig
+export default withMDX(nextConfig);
