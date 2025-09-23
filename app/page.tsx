@@ -180,7 +180,7 @@ export default function Home() {
           긍정적인 가치를 더할 것이라 확신합니다.
         </p>
       </section>
-      <footer>마지막 업데이트: 2025년 9월 · Designed & Built by 홍길동</footer>
+      <footer>마지막 업데이트: 2025년 9월 · Designed & Built by 김솔지</footer>
     </body>
   );
 }
