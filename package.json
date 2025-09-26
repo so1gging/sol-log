@@ -23,6 +23,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@mdx-js/loader": "3.0.1",
+    "@tailwindcss/postcss": "^4.1.13",
     "@types/mdx": "^2.0.13",
     "@types/node": "^20",
     "@types/react": "^19.1.13",
