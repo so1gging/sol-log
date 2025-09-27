@@ -6,15 +6,23 @@ export default async function Home() {
   const postList = await getPostList("record");
 
   return (
-    <div className="divide-y divide-gray-200 dark:divide-gray-700">
+    <div className="divide-y divide-gray-200">
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-        <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
-          POSTS_
+        <h1 className="text-3xl leading-9 text-right font-light tracking-tight text-stone-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          어서오세요,
+          <br />
+          <span className="font-medium">김솔지블로그</span>입니다
+          <span className="font-bold text-[#ffae00]">.</span>
+          <br />
         </h1>
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          설명이에요.
+        <p className="text-base text-right leading-6 text-stone-500">
+          방문해주셔서 감사합니다. <br /> 저는 이 공간에{" "}
+          <span className="underline decoration-wavy underline-offset-4">
+            제 기술적인 생각과 배운 점들을 기록
+          </span>
+          하고 있어요.
         </p>
-        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+        <ul className="divide-y divide-gray-200">
           {!postList.length && "No posts found."}
           {postList.map((post) => {
             const { url, title, date, desc } = post;
