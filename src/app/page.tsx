@@ -1,5 +1,7 @@
 import { getPostList } from "@/lib/utils";
+import dayjs from "dayjs";
 import Link from "next/link";
+import "dayjs/locale/ko";
 
 export default async function Home() {
   const postList = await getPostList("record");
@@ -31,7 +33,10 @@ export default async function Home() {
                   <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <dl>
                       <dd className="text-base leading-6 font-medium text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>{date.toString()}</time>
+                        <time dateTime={date}>
+                          {dayjs(date).format("YYYY-MM-DD")}{" "}
+                          {dayjs(date).locale("ko").format("dddd")}
+                        </time>
                       </dd>
                     </dl>
                     <div className="space-y-5 xl:col-span-3">
