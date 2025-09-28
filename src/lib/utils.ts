@@ -1,25 +1,12 @@
-import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
-import fs from "fs";
-import path from "path";
 import dayjs from "dayjs";
-import matter from "gray-matter";
-import readingTime from "reading-time";
+import fs from "fs";
 import { sync } from "glob";
+import matter from "gray-matter";
+import path from "path";
+import readingTime from "reading-time";
 
 const BASE_PATH = "/src/blog";
 const POSTS_PATH = path.join(process.cwd(), BASE_PATH);
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
-
-// MDX 파일 파싱 : abstract / detail 구분
-const parsePost = async (postPath: string): Promise<any> => {
-  const postAbstract = parsePostAbstract(postPath);
-  const postDetail = await parsePostDetail(postPath);
-  return { ...postAbstract, ...postDetail };
-};
 
 // MDX의 개요 파싱
 // url, cg path, cg name, slug
@@ -46,6 +33,13 @@ const parsePostDetail = async (postPath: string) => {
     .locale("ko")
     .format("YYYY년 MM월 DD일");
   return { ...grayMatter, dateString, content, readingMinutes };
+};
+
+// MDX 파일 파싱 : abstract / detail 구분
+const parsePost = async (postPath: string): Promise<any> => {
+  const postAbstract = parsePostAbstract(postPath);
+  const postDetail = await parsePostDetail(postPath);
+  return { ...postAbstract, ...postDetail };
 };
 
 // category folder name을 public name으로 변경 : dir_name -> Dir Name

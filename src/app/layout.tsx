@@ -9,8 +9,11 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "Kimsolzy log",
+  title: "Kimsolzy",
   description: "It's a technical blog",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 const bodyClass = `flex items-center text-stone-900 w-full bg-white justify-between ${notoSansKr.className}`;
