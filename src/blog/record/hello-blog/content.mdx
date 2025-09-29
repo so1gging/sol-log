@@ -1,16 +1,34 @@
 ---
-title: "나의 첫 개인 블로그 시작"
+title: "나의 첫 블로그 제작기 🚀 (with. next.js)"
 date: 2025-09-27
-desc: 첫 블로그 생성 기록
+desc: 티스토리에서 next.js 기반 블로그로 이사했어요.
 thumbnail: /posts/nextjs_blog/setup/thumbnail.jpg
 ---
 
-# h1 안녕 나의 개인 블로그
+# 나의 첫 블로그 제작기 🚀 (with. next.js)
 
-## h2
+이 글에서는 **Next.js + Tailwind + MDX** 기반으로 블로그를 만든 과정을 기록합니다.  
+앞으로 비슷한 프로젝트를 하거나 포트폴리오용 글로 활용할 수 있도록 정리했습니다.
 
-### h3
+## 1️⃣ 프로젝트 시작
 
-#### h4
+블로그를 만들게 된 이유와 기술 선택:
 
-mdx 기반 개인 블로그!
+- **Next.js 15**: 최신 기능과 Turbopack 활용
+- **React 19**: 최신 버전 적용
+- **Tailwind CSS 4**: 빠른 스타일링과 반응형 레이아웃
+- **MDX**: Markdown + JSX, 포스트 관리 편리
+- **TypeScript**: 안정적인 코드 작성
+
+```bash
+# Next.js + TypeScript + Tailwind 프로젝트 생성
+npx create-next-app@latest kimsolzy-blog --typescript
+```
+
+## 2️⃣ 환경 설정
+패키지 설치
+
+```bash
+yarn add next react react-dom next-mdx-remote tailwind-merge clsx class-variance-authority lucide-react gray-matter glob reading-time dayjs
+yarn add -D typescript @types/react @types/node tailwindcss postcss autoprefixer eslint @eslint/eslintrc @types/react-dom
+```

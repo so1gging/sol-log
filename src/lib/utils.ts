@@ -4,6 +4,7 @@ import { sync } from "glob";
 import matter from "gray-matter";
 import path from "path";
 import readingTime from "reading-time";
+import { Post } from "./types";
 
 const BASE_PATH = "/src/blog";
 const POSTS_PATH = path.join(process.cwd(), BASE_PATH);
@@ -36,10 +37,10 @@ const parsePostDetail = async (postPath: string) => {
 };
 
 // MDX 파일 파싱 : abstract / detail 구분
-const parsePost = async (postPath: string): Promise<any> => {
+const parsePost = async (postPath: string): Promise<Post> => {
   const postAbstract = parsePostAbstract(postPath);
   const postDetail = await parsePostDetail(postPath);
-  return { ...postAbstract, ...postDetail };
+  return { ...postAbstract, ...postDetail } as Post;
 };
 
 // category folder name을 public name으로 변경 : dir_name -> Dir Name
@@ -69,7 +70,10 @@ export const getPostList = async (category?: string): Promise<any[]> => {
 };
 
 // post 상세 페이지 내용 조회
-export const getPostDetail = async (category: string, slug: string) => {
+export const getPostDetail = async (
+  category: string,
+  slug: string
+): Promise<Post> => {
   const filePath = `${POSTS_PATH}/${category}/${slug}/content.mdx`;
   const detail = await parsePost(filePath);
   return detail;

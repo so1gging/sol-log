@@ -1,4 +1,5 @@
 import { components } from "@/components/MdxComponents";
+import PostLayout from "@/components/PostLayout";
 import { getPostDetail } from "@/lib/utils";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
@@ -7,8 +8,8 @@ export default async function PostDetail({ params: { category, slug } }) {
   const post = await getPostDetail(category, slug);
 
   return (
-    <div>
+    <PostLayout post={post}>
       <MDXRemote source={post.content} components={components} />
-    </div>
+    </PostLayout>
   );
 }
