@@ -9,19 +9,19 @@ export const components: MDXComponents = {
   table: TableWrapper,
   h1: (props: any) => (
     <h1
-      className="text-3xl font-bold tracking-tight text-gray-900 mt-10 mb-6"
+      className="text-2xl font-bold tracking-tight text-gray-900 mt-6 mb-2 box-content"
       {...props}
     />
   ),
   h2: (props: any) => (
     <h2
-      className="text-2xl font-semibold tracking-tight text-gray-800 mt-8 mb-4"
+      className="text-xl font-semibold tracking-tight text-gray-800 mt-8 mb-4"
       {...props}
     />
   ),
   h3: (props: any) => (
     <h3
-      className="text-xl font-medium tracking-tight text-gray-700 mt-6 mb-3"
+      className="text-lg font-medium tracking-tight text-gray-700 mt-6 mb-3"
       {...props}
     />
   ),

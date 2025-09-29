@@ -1,34 +1,26 @@
 ---
-title: "나의 첫 블로그 제작기 🚀 (with. next.js)"
+title: "Hello Blog !"
 date: 2025-09-27
-desc: 티스토리에서 next.js 기반 블로그로 이사했어요.
+desc: 새로운 블로그야 안녕
 thumbnail: /posts/nextjs_blog/setup/thumbnail.jpg
 ---
 
-# 나의 첫 블로그 제작기 🚀 (with. next.js)
+# 블로그야 안녕
 
-이 글에서는 **Next.js + Tailwind + MDX** 기반으로 블로그를 만든 과정을 기록합니다.  
-앞으로 비슷한 프로젝트를 하거나 포트폴리오용 글로 활용할 수 있도록 정리했습니다.
+근 5년이상 티스토리를 개발 블로그로 사용해왔다. 첫 취업 준비할 때 부터 사용했다보니 작성했던 게시글도 총 150개가 훌쩍 넘어가고, 감사하게도 아직도 그 게시글을 읽어주는 방문자도 많다.
+그럼에도 왜 새로운 블로그를 만들었냐면, 나만의 작은 목표 달성을 위해서다. 프론트엔드 개발자로써 블로그 하나정도는 만들 수 있어야 하지 않을까 하는 목표.
+프론트 개발만 5년 이상 했으니 쉽지 않을까 하고 시작했는데... 쉽지않았다.
 
-## 1️⃣ 프로젝트 시작
+여러번 실패를 겪었는데 아마 너무 거창하게 만드려고 해서 실패했지 않았나 싶었다. 유명한 개발자분들의 기술블로그를 자주 보다 보니 눈이 높아져 버렸다. _"나도 저렇게 만들어야지!"_ 하다보니 너무 방대해져버렸음.
 
-블로그를 만들게 된 이유와 기술 선택:
+첫 블로그 만들기 실패를 맞보게 해준 도구는 **Jekyll** 이었다. 내가 알고있는 유명한 프론트엔드 개발자분도 Jekyll 블로그를 사용하고 계시고, 그냥 테마 자체가 간지나보였음.
+결론부터 말하자면 만드는데 실패했다 ! 왜인지 몰라도 ruby 버전이 적용이 잘 되지 않았고 실행조차 안됐다.
+한 며칠을 퇴근하고 나서 매일 작업하고 들여다보고 했는데... 이거 뭐 설치부터 되지 않으니 블로그에 대한 흥미가 식어버렸다. 그러고 바로 휴지통행.
 
-- **Next.js 15**: 최신 기능과 Turbopack 활용
-- **React 19**: 최신 버전 적용
-- **Tailwind CSS 4**: 빠른 스타일링과 반응형 레이아웃
-- **MDX**: Markdown + JSX, 포스트 관리 편리
-- **TypeScript**: 안정적인 코드 작성
+두번째 시도는 **git pages** 이다. 무려 github를 통해 웹 페이지를 호스팅할 수 있다. 물론 이것도 실패했다. 사실 실패는 아니고 내가 원하는 방향과 달랐다. 왜냐면 나는 최신 next.js 버전을 사용하고 싶었는데
+github pages 는 turbpack 이 탑재된 next.js 환경에서는 쓰지 못했다. 만들어 놓은게 슬프지만 눈물을 머금고 delete !
 
-```bash
-# Next.js + TypeScript + Tailwind 프로젝트 생성
-npx create-next-app@latest kimsolzy-blog --typescript
-```
+결국 **vercel** 을 이용해 배포했다. XXX.github.io 도메인이 멋있다고 생각해서 어떻게든 git pages 를 쓰고 싶었으나, 이 나의 최신 라이브러리 병이 허락을 하지 않았다.
+XXX.vercel.app ... 누가봐도 vercel 로 배포한 티가 나지만 자주 보니 좀 정이 든다.
 
-## 2️⃣ 환경 설정
-패키지 설치
-
-```bash
-yarn add next react react-dom next-mdx-remote tailwind-merge clsx class-variance-authority lucide-react gray-matter glob reading-time dayjs
-yarn add -D typescript @types/react @types/node tailwindcss postcss autoprefixer eslint @eslint/eslintrc @types/react-dom
-```
+일단 메인페이지와 상세페이지는 @next/mdx를 이용해 만들었다. 댓글기능도 넣어야하고 seo도 적용시켜야하고... 해야 할 건 많지만 그래도 일단 만들어내서 뿌듯함.

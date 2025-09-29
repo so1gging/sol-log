@@ -42,7 +42,7 @@ export default async function Home() {
                     <div className="space-y-5 xl:col-span-3">
                       <div className="space-y-6">
                         <div>
-                          <h2 className="text-2xl leading-8 font-bold tracking-tight">
+                          <h2 className="text-2xl leading-4 font-bold tracking-tight">
                             <Link
                               href={url}
                               className="text-gray-900 dark:text-gray-100">

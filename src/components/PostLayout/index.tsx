@@ -21,13 +21,13 @@ const PostLayout = ({ post, children }: PostLayoutProps) => {
                 </div>
               </dl>
               <div>
-                <h1 className="text-2xl leading-9 font-extrabold tracking-tight text-stone-900 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+                <h1 className="text-2xl leading-9 font-extrabold tracking-tight text-stone-900 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
                   {post.title}
                 </h1>
               </div>
             </div>
           </header>
-          <div className="prose prose-slate max-w-fit">{children}</div>
+          <div className="prose prose-slate max-w-fit py-5">{children}</div>
         </div>
       </article>
     </section>
