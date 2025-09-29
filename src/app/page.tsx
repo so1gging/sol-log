@@ -1,7 +1,7 @@
 import { getPostList } from "@/lib/utils";
 import dayjs from "dayjs";
-import Link from "next/link";
 import "dayjs/locale/ko";
+import Link from "next/link";
 
 export default async function Home() {
   const postList = await getPostList("record");
@@ -28,7 +28,7 @@ export default async function Home() {
           {postList.map((post) => {
             const { url, title, date, desc } = post;
             return (
-              <li key={url} className="py-12">
+              <Link key={url} href={url} className="py-12">
                 <article>
                   <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <dl>
@@ -43,11 +43,9 @@ export default async function Home() {
                       <div className="space-y-6">
                         <div>
                           <h2 className="text-2xl leading-4 font-bold tracking-tight">
-                            <Link
-                              href={url}
-                              className="text-gray-900 dark:text-gray-100">
+                            <p className="text-stone-900 dark:text-gray-100">
                               {title}
-                            </Link>
+                            </p>
                           </h2>
                           {/* <div className="flex flex-wrap">
                             {tags.map((tag) => (
@@ -55,22 +53,21 @@ export default async function Home() {
                             ))}
                           </div> */}
                         </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        <div className="prose max-w-none text-gray-500 dark:text-stone-400">
                           {desc}
                         </div>
                       </div>
                       <div className="text-base leading-6 font-medium">
-                        <Link
-                          href={url}
+                        <p
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                           aria-label={`Read more: "${title}"`}>
                           Read more &rarr;
-                        </Link>
+                        </p>
                       </div>
                     </div>
                   </div>
                 </article>
-              </li>
+              </Link>
             );
           })}
         </ul>
