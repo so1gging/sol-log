@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-const bodyClass = `flex items-center text-stone-900 w-full bg-white justify-between ${notoSansKr.className}`;
+const bodyClass = `flex items-center text-stone-900 w-full bg-white justify-between select-none ${notoSansKr.className}`;
 const sectionClass = "mx-auto w-full max-w-5xl px-4 sm:px-6";
 
 export default function RootLayout({
