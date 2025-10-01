@@ -13,14 +13,14 @@ const Header = () => {
         {/* 네비게이션 */}
         <nav className="flex items-center space-x-6">
           <Link
-            href="/blog"
-            className="text-sm text-gray-600 hover:text-stone-900">
-            Blog
-          </Link>
-          <Link
             href="/about"
             className="text-sm text-gray-600 hover:text-stone-900">
             About
+          </Link>
+          <Link
+            href="/blog"
+            className="text-sm text-gray-600 hover:text-stone-900">
+            Blog
           </Link>
         </nav>
       </div>
