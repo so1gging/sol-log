@@ -16,7 +16,7 @@ export default async function Home() {
           <span className="font-bold text-[#ffae00]">.</span>
           <br />
         </h1>
-        <p className="text-base text-right leading-6 text-stone-500">
+        <p className="text-base text-right leading-6 text-stone-500 mb-20">
           방문해주셔서 감사합니다. <br /> 저는 이 공간에{" "}
           <span className="underline decoration-wavy underline-offset-4">
             제 기술적인 생각과 배운 점들을 기록
