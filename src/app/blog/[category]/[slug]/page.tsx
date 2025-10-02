@@ -1,3 +1,4 @@
+import Comments from "@/components/Comments";
 import { components } from "@/components/MdxComponents";
 import PostLayout from "@/components/PostLayout";
 import Section from "@/components/Section";
@@ -12,6 +13,7 @@ export default async function PostDetail({ params: { category, slug } }) {
     <Section>
       <PostLayout post={post}>
         <MDXRemote source={post.content} components={components} />
+        <Comments />
       </PostLayout>
     </Section>
   );
