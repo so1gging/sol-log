@@ -39,8 +39,8 @@ export default function AboutPage() {
             되고자 노력합니다.
           </p>
         </div>
-        <div className="my-4 bg-stone-300 h-[1px] w-[500px] m-auto" />
-        <div className="mt-2 flex gap-3 justify-center text-stone-800">
+        <div className="my-2 bg-stone-300 h-[1px] w-[500px] m-auto" />
+        <div className="flex gap-3 justify-center text-stone-800">
           <p className="text-center">
             저는 프론트엔드 개발을 단순히 화면을 구성하는 작업으로 보지
             않습니다. <br />
