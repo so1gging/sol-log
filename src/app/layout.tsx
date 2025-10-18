@@ -16,8 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-const bodyClass = `flex items-center text-stone-900 w-full bg-white justify-between select-none ${notoSansKr.className}`;
-const sectionClass = "mx-auto w-full max-w-5xl px-4 sm:px-6";
+const bodyClass = `flex items-center text-stone-900 w-screen h-screen bg-white justify-between select-none ${notoSansKr.className}`;
 
 export default function RootLayout({
   children,
@@ -27,10 +26,15 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={bodyClass}>
-        <section className={sectionClass}>
-          <Header />
-          <main className="mb-auto">{children}</main>
-        </section>
+        <main className="flex-1 flex h-full">
+          <aside className="w-64 border-r bg-gray-50">
+            <div>sideBar</div>
+          </aside>
+          <section className="flex-1 flex flex-col">
+            <div>content tab</div>
+            <div className="flex-1 overflow-y-auto p-4">{children}</div>
+          </section>
+        </main>
       </body>
     </html>
   );
