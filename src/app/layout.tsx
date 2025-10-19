@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import Header from "@/components/Header";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
+import SideBar from "@/components/layout/SideBar";
+import Tabs from "@/components/layout/Tabs";
 
 const notoSansKr = Noto_Sans_KR({
   weight: ["500", "400", "300"],
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const bodyClass = `flex items-center text-stone-900 w-screen h-screen bg-white justify-between select-none ${notoSansKr.className}`;
+const bodyClass = `flex items-center text-stone-900 w-screen h-screen bg-white justify-between select-none rounded-2xl border-1 ${notoSansKr.className}`;
 
 export default function RootLayout({
   children,
@@ -27,11 +28,9 @@ export default function RootLayout({
     <html lang="ko">
       <body className={bodyClass}>
         <main className="flex-1 flex h-full">
-          <aside className="w-64 border-r bg-gray-50">
-            <div>sideBar</div>
-          </aside>
+          <SideBar />
           <section className="flex-1 flex flex-col">
-            <div>content tab</div>
+            <Tabs />
             <div className="flex-1 overflow-y-auto p-4">{children}</div>
           </section>
         </main>
