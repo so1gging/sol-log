@@ -14,7 +14,7 @@ export default async function NotFound() {
         </p>
         <Link
           href="/"
-          className="inline rounded-lg border border-transparent px-4 py-2 text-sm leading-5 font-medium text-stone-700 transition-colors duration-150 hover:text-[#ffae00] focus:outline-hidden">
+          className="inline rounded-lg border border-transparent px-4 py-2 text-sm leading-5 font-medium text-stone-700 transition-colors duration-150 hover:text-[#337ea9] focus:outline-hidden">
           홈으로 안내해드릴게요
         </Link>
       </div>

@@ -13,7 +13,7 @@ export default async function Home() {
           어서오세요,
           <br />
           <span className="font-medium">김솔지블로그</span>입니다
-          <span className="font-bold text-[#ffae00]">.</span>
+          <span className="font-bold text-[#337ea9]">.</span>
           <br />
         </h1>
         <p className="text-base text-right leading-6 text-stone-500 mb-20">
