@@ -9,14 +9,14 @@ export default async function Home() {
   return (
     <div className="divide-y divide-gray-200">
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-        <h1 className="text-3xl leading-9 text-right font-light tracking-tight text-stone-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <h1 className="text-2xl leading-9 text-right font-light tracking-tight text-stone-900 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           어서오세요,
           <br />
           <span className="font-medium">김솔지블로그</span>입니다
           <span className="font-bold text-[#337ea9]">.</span>
           <br />
         </h1>
-        <p className="text-base text-right leading-6 text-stone-500 mb-20">
+        <p className="text-base font-light text-right leading-6 text-stone-500 mb-20">
           방문해주셔서 감사합니다. <br /> 저는 이 공간에{" "}
           <span className="underline decoration-wavy underline-offset-4">
             제 기술적인 생각과 배운 점들을 기록
