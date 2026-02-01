@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Header from "@/components/Header";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 
@@ -28,7 +27,6 @@ export default function RootLayout({
     <html lang="ko">
       <body className={bodyClass}>
         <section className={sectionClass}>
-          <Header />
           <main className="mb-auto">{children}</main>
         </section>
       </body>
