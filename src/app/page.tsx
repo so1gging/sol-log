@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, ReactNode } from "react";
 
 type TechType = "all" | "react" | "next" | "map" | "testing";
 
@@ -10,7 +10,7 @@ interface Project {
   period: string;
   tech: string;
   techTags: TechType[];
-  details: string[];
+  details: ReactNode[];
 }
 
 const projects: Project[] = [
@@ -22,9 +22,42 @@ const projects: Project[] = [
     techTags: ["react", "next", "testing"],
     details: [
       "실거래 데이터 기반 분석·리포트형 서비스 프론트엔드 개발",
-      "react-hook-form 기반 필터 시스템 설계 및 구현",
-      "확장 가능한 필터 UI 구조 설계",
-      "E2E 자동화를 통한 배포 안정성 향상",
+      <>
+        인터랙션 개선을 통해{" "}
+        <span className="relative inline-block">
+          <span className="relative z-10">서버 트래픽과 응답 지연 문제 완화</span>
+          <span className="accent-underline absolute inset-0" />
+        </span>
+      </>,
+      <>
+        서버 상태 라이브러리를 활용한{" "}
+        <span className="relative inline-block">
+          <span className="relative z-10">UX 응답성 개선</span>
+          <span className="accent-underline absolute inset-0" />
+        </span>
+      </>,
+      <>
+        UI-API 간 브릿지 계층 설계로 필터 컴포넌트가{" "}
+        <span className="relative inline-block">
+          <span className="relative z-10">서버 스펙 변화에 독립적으로 동작하도록 구현</span>
+          <span className="accent-underline absolute inset-0" />
+        </span>
+      </>,
+      <>
+        반복적인 수동 QA 체크리스트를{" "}
+        <span className="relative inline-block">
+          <span className="relative z-10">E2E 테스트로 자동화</span>
+          <span className="accent-underline absolute inset-0" />
+        </span>
+        하여 배포 품질과 안정성 향상
+      </>,
+      <>
+        CI/CD 배포 파이프라인 병렬 처리 및 캐싱 전략으로{" "}
+        <span className="relative inline-block">
+          <span className="relative z-10">평균 배포시간 50% 이상 단축</span>
+          <span className="accent-underline absolute inset-0" />
+        </span>
+      </>,
     ],
   },
   {
