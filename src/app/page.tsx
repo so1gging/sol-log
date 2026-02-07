@@ -16,12 +16,11 @@ interface Project {
 const projects: Project[] = [
   {
     id: "1",
-    title: "실거래 데이터 기반 분석 솔루션",
-    period: "2025.07 ~ Present",
+    title: "실거래 데이터 기반 분석 솔루션 – Rsquare Analytics",
+    period: "2025.08 ~ Present",
     tech: "React · Next.js · TypeScript · E2E",
     techTags: ["react", "next", "testing"],
     details: [
-      "실거래 데이터 기반 분석·리포트형 서비스 프론트엔드 개발",
       <>
         인터랙션 개선을 통해{" "}
         <span className="relative inline-block">
@@ -30,31 +29,23 @@ const projects: Project[] = [
         </span>
       </>,
       <>
-        서버 상태 라이브러리를 활용한{" "}
+        서버 상태 라이브러리를 활용해{" "}
         <span className="relative inline-block">
           <span className="relative z-10">UX 응답성 개선</span>
           <span className="accent-underline absolute inset-0" />
         </span>
       </>,
       <>
-        UI-API 간 브릿지 계층 설계로 필터 컴포넌트가{" "}
+        E2E 테스트 도입으로{" "}
         <span className="relative inline-block">
-          <span className="relative z-10">서버 스펙 변화에 독립적으로 동작하도록 구현</span>
+          <span className="relative z-10">QA 자동화 및 배포 안정성 향상</span>
           <span className="accent-underline absolute inset-0" />
         </span>
       </>,
       <>
-        반복적인 수동 QA 체크리스트를{" "}
+        CI/CD 파이프라인 개선으로{" "}
         <span className="relative inline-block">
-          <span className="relative z-10">E2E 테스트로 자동화</span>
-          <span className="accent-underline absolute inset-0" />
-        </span>
-        하여 배포 품질과 안정성 향상
-      </>,
-      <>
-        CI/CD 배포 파이프라인 병렬 처리 및 캐싱 전략으로{" "}
-        <span className="relative inline-block">
-          <span className="relative z-10">평균 배포시간 50% 이상 단축</span>
+          <span className="relative z-10">평균 배포 시간 50% 이상 단축</span>
           <span className="accent-underline absolute inset-0" />
         </span>
       </>,
@@ -62,26 +53,68 @@ const projects: Project[] = [
   },
   {
     id: "2",
-    title: "사내 백오피스 리뉴얼 (Tech Lead)",
+    title: "사내 백오피스 서비스",
     period: "2024.07 ~ 2025.07",
     tech: "React · React Query · Playwright",
     techTags: ["react", "testing"],
     details: [
-      "SPA 기반 백오피스 구조 설계 및 기술 방향성 리드",
-      "React Query 도입으로 불필요한 API 호출 감소",
-      "Playwright 기반 E2E 테스트 환경 개선",
+      <>
+        <span className="relative inline-block">
+          <span className="relative z-10">프론트엔드 테크리드</span>
+          <span className="accent-underline absolute inset-0" />
+        </span>
+        로서 팀원 기술적 방향 제시 및 프로젝트 운영
+      </>,
+      "React Query의 캐싱 전략을 활용해 불필요한 API 호출을 줄이고 응답 성능 개선",
+      <>
+        누적된 운영 업무의{" "}
+        <span className="relative inline-block">
+          <span className="relative z-10">70% 이상을 해결</span>
+          <span className="accent-underline absolute inset-0" />
+        </span>
+        하여 서비스 안정성과 사용자 만족도 향상
+      </>,
+      "기존 E2E 테스트 환경 Playwright로 마이그레이션 및 속도 개선",
     ],
   },
   {
     id: "3",
     title: "지도 기반 데이터 시각화 서비스",
-    period: "2021.12 ~ Present",
+    period: "2021.12 ~ 2024.07",
     tech: "React · Next.js · Canvas · Map",
     techTags: ["react", "next", "map"],
     details: [
-      "PoC 단계부터 참여하여 서비스 정식 출시까지 경험",
-      "Canvas 기반 렌더링으로 대규모 데이터 성능 최적화",
-      "사내 공통 Map 라이브러리 설계 및 구현",
+      "신규 프로젝트 PoC부터 출시 전 과정 프론트엔드 개발 참여",
+      "JavaScript 기반 Naver Map API를 선언적으로 구현하여 사내 라이브러리화",
+      <>
+        canvas 기반 맵 레이어를 구현해{" "}
+        <span className="relative inline-block">
+          <span className="relative z-10">수만 건의 DOM 엘리먼트를 효율적으로 시각화</span>
+          <span className="accent-underline absolute inset-0" />
+        </span>
+        하여 성능 개선
+      </>,
+      "정적 분석 도구 SonarQube를 활용하여 버그를 사전 식별하고 코드 품질 향상 기여",
+    ],
+  },
+  {
+    id: "4",
+    title: "사내 프로젝트 개발 및 유지보수",
+    period: "2020.09 ~ 2021.12",
+    tech: "React · Android · AWS · Firebase",
+    techTags: ["react"],
+    details: [
+      "웹/앱 화면 개발 및 API 연동",
+      "데스크탑과 모바일에 최적화된 반응형 개발",
+      "Android 기반 APP 유지보수",
+      <>
+        AWS SNS 서비스를 연동하여{" "}
+        <span className="relative inline-block">
+          <span className="relative z-10">글로벌 문자인증 서비스 제공</span>
+          <span className="accent-underline absolute inset-0" />
+        </span>
+      </>,
+      "Firebase notification service를 이용해 앱 메시징 서비스 개발",
     ],
   },
 ];
